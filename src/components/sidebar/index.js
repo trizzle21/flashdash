@@ -1,7 +1,6 @@
 import React from "react"
 import style from './sidebar.scss';
 import {
-  BrowserRouter as Router,
   Link 
 } from "react-router-dom";
 
@@ -9,13 +8,18 @@ import {
 function Sidebar(props) {
   return (
     <aside className={ style.sidenav }>
+      
       <ul className={ style.sidenav__list }>
-        <li className={ style['sidenav__list-item'] }>
-          <Link className={ style["sidenav__link"]} to="/">Page One</Link>
-        </li>
-        <li className={ style['sidenav__list-item'] }>
-          <Link className={ style["sidenav__link"]} to="/main2">Page Two</Link>
-        </li>
+        <Link className={ style["sidenav__link"]} to="/main-1">
+          <li className={ style['sidenav__list-item'] }>
+            Page One
+          </li>
+        </Link>
+        <Link className={ style["sidenav__link"]} to="/main-2">
+          <li className={ style['sidenav__list-item'] }>
+            Page Two
+          </li>
+        </Link>
       </ul>   
     </aside>
   )

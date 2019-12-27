@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './app.scss';
 import {
-  StaticRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -19,17 +19,15 @@ function App({ title, name }) {
     return (
         <div className={ style['grid-container'] }>
             <Header title={ title } name={ name } />   
+
             <Router>
               <Switch>
-                <Route exact={true} path="/">
-                  <Main />
-                </Route>
-                <Route exact={true} path="/main2">
-                  <Main2 />
-                </Route>          
-            </Switch>
+                <Route exact path="/" component={ Main } />
+                <Route exact path="/main-1" component={ Main } />
+                <Route exact path="/main-2" component={ Main2 } />
+              </Switch>
             <Sidebar />
-            </Router>
+          </Router>
           <Footer />
 
         </div>

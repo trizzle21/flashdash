@@ -45,7 +45,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: "./index.html",
-      title: "Test"
+      title: "Development"
     })
   ],
   entry: './src/index.js',
