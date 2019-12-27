@@ -1,4 +1,4 @@
-@import '../common/colors';
+@import '../../common/colors';
 
 
 .header {
@@ -9,4 +9,20 @@
     background-color: $color-light-primary;
 }
   
-  
+.header-title {
+    margin-left: 42px;
+}
+
+.menu-icon {
+    position: fixed;
+    display: flex;
+    top: 5px;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    padding: 12px;
+    background-color: #DADAE3;
+  }

@@ -6,20 +6,17 @@ import {
   Route,
 } from "react-router-dom";
 
-
-
-import Sidebar from './sidebar/index';
-import Header from './header/index';
-import Footer from './footer/index';
-import Main from './main1/index';
-import Main2 from './main2/index';
+import Sidebar from './components/sidebar/index';
+import Header from './components/header/index';
+import Footer from './components/footer/index';
+import Main from './components/main1/index';
+import Main2 from './components/main2/index';
 
 
 function App({ title, name }) {
     return (
         <div className={ style['grid-container'] }>
             <Header title={ title } name={ name } />   
-
             <Router>
               <Switch>
                 <Route exact path="/" component={ Main } />

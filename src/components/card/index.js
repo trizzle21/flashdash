@@ -8,7 +8,7 @@ const Card = ({ text }) => (
 
 function OverviewCard(props) {
     return (
-      <div className={ style.overviewCard }>
+      <div className={ style.overviewcard }>
         <div className={ style.overviewcard__icon }>{ props.icon }</div>
         <div className={ style.overviewcard__icon }>{ props.info }</div>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import App from "./components/App";
+import App from "./App";
 
 const title = "Sample Dashboard";
 const name = "Test Name";

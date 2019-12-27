@@ -19,13 +19,6 @@ body {
   height: 100vh;
 }
 
-.main {
-  grid-area: main;
-  background-color: #8fd4d9;
-}
-
-
-
 @media only screen and (min-width: 46.875em) {
   /* Show the sidenav */
   .grid-container {
@@ -35,30 +28,4 @@ body {
       "sidenav main"
       "sidenav footer";
   }
-}
-
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px;
-  padding: 20px;
-  height:150px;
-  background-color: #e3e4e6;
-  color: $color-dark-primary;
-}
-
-.main-overview {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr)); /* Where the magic happens */
-  grid-auto-rows: 94px;
-  grid-gap: 20px;
-  margin: 20px;
-}
-
-.overviewcard {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: $color-dark-primary;
 }

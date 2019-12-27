@@ -4,7 +4,7 @@ import { OverviewCard, Card } from "../card/index"
 
 function Main(props) {
   return (
-    <main>
+    <main className={ style.main }>
       <div className={ style["main-header"] }>
         <div className={ style["main-header__heading"] }>Hello User</div>
         <div className={ style["main-header__updates"] }>Recent Items</div>
