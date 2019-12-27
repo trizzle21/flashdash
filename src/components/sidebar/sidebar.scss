@@ -34,6 +34,7 @@
 .sidenav__link {
   text-decoration: none;
   color: #121212;
+
 }
 
 .sidenav__list {
@@ -46,6 +47,11 @@
 .sidenav__list-item {
   padding: 20px 20px 20px 40px;
   color: $color-primary-text;
+}
+
+.sidenav__list-text {
+  display: inline;
+  margin-left: 20px;
 }
 
 .sidenav__list-item:hover {

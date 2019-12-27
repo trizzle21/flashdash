@@ -10,3 +10,11 @@ TODO
 ## Development 
 
 TODO
+
+
+
+## Helpful Links
+
+I use font-awesome library for sidebard icons, here is the list of available icons
+
+https://fontawesome.com/icons?d=gallery&m=free
