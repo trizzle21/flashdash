@@ -1,10 +1,9 @@
 // Define a color variable
-$color-sassy: #cc4397;
-$color-blue: #0059ff;
 
 
 body {
   margin: 0;
+  font-family: "Roboto";
 }
 
 .grid-container {
@@ -22,6 +21,8 @@ body {
   grid-area: main;
   background-color: #8fd4d9;
 }
+
+
 
 @media only screen and (min-width: 46.875em) {
   /* Show the sidenav */
