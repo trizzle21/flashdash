@@ -1,9 +1,11 @@
 // Define a color variable
+@import './common/colors';
 
 
 body {
   margin: 0;
   font-family: "Roboto";
+  color: $color-primary-text
 }
 
 .grid-container {
@@ -42,7 +44,7 @@ body {
   padding: 20px;
   height:150px;
   background-color: #e3e4e6;
-  color: slategray;
+  color: $color-dark-primary;
 }
 
 .main-overview {
@@ -58,5 +60,5 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #d3d3;
+  background-color: $color-dark-primary;
 }

@@ -2,7 +2,7 @@
 
 .sidenav {
   grid-area: sidenav;
-  background-color: $color-sandstorm;
+  background-color: $color-dark-primary;
 }
 
 .sidenav__link {
@@ -14,17 +14,17 @@
   padding: 0;
   margin-top: 85px;
   list-style-type: none;
-  color: $color-black-olive;
+  color: $color-light-primary;
 }
 
 .sidenav__list-item {
   padding: 20px 20px 20px 40px;
-  color: $color-black-olive;
+  color: $color-light-primary;
 }
 
 .sidenav__list-item:hover {
   // background-color: rgba(255, 255, 255, 0.2);
-  background-color: $color-platinum;
+  background-color: $color-primary;
   cursor: pointer;
 }
 

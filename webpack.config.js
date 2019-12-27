@@ -56,5 +56,6 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     hot: true,
+    historyApiFallback: true
   }
 };
