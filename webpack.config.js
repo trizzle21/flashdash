@@ -16,7 +16,12 @@ module.exports = {
                   modules: true
                 }
               },
-              'sass-loader',
+              {
+                loader: 'sass-loader',
+                options: {
+                  implementation: require('sass')
+                },
+              }
             ],
           },
           {

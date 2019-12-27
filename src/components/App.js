@@ -1,18 +1,17 @@
 import React from 'react';
 import style from './app.scss';
+
 import Sidebar from './sidebar/index';
+import Header from './header/index';
+import Footer from './footer/index';
 
 
 function App({ title }) {
     return (
-      <div class="grid-container">
-        { title }
+      <div className={style['grid-container']}>
+        <Header title={title}/>
         <Sidebar />
-        
-        <span role="img" aria-label="rocket ship">
-          🚀🚀
-        </span>
-        <div className={style.sassyDiv}>Get Sassy!</div>
+        <Footer />
       </div>
     );
 }
