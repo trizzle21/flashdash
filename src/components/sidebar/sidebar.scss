@@ -2,7 +2,12 @@
   grid-area: sidenav;
   background-color: #121212;
 }
-    
+
+.sidenav__link {
+  text-decoration: none;
+  color: wheat;
+}
+
 .sidenav__list {
   padding: 0;
   margin-top: 85px;

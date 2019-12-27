@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -41,7 +42,11 @@ module.exports = {
       ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      template: "./index.html",
+      title: "Test"
+    })
   ],
   entry: './src/index.js',
   output: {
@@ -49,7 +54,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
-    contentBase: './dist',
-    hot: true
+    contentBase: path.join(__dirname, 'dist'),
+    hot: true,
   }
 };
