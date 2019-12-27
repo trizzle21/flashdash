@@ -3,9 +3,9 @@ import style from './header.scss';
 
 
 const Header = (props) => (
-  <header class={style.header}>
-    <div class={style["header-search"]}>{props.title}</div>
-    <div class={style["header-avatar"]}>Your face</div>
+  <header className={style.header}>
+    <div className={ style["header-search"] }>{ props.title }</div>
+    <div className={ style["header-avatar"] }>{ props.name }</div>
   </header>
 )
 

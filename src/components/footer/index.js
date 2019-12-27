@@ -4,9 +4,9 @@ import style from './footer.scss';
 
 function Footer(props) {
     return (
-        <footer class={ style.footer }>
-            <div class={ style["footer-copyright"] } >2019 </div>
-            <div class={ style["footer-signature"] }>Made with love</div>
+        <footer className={ style.footer }>
+            <div className={ style["footer-copyright"] } >2019 </div>
+            <div className={ style["footer-signature"] }>Made with love</div>
         </footer>
     );
 }
