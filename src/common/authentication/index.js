@@ -1,7 +1,7 @@
 
 // To be filled in with real authentication
 const fakeAuth = {
-    isAuthenticated: true,
+    isAuthenticated: false,
     authenticate(cb) {
       fakeAuth.isAuthenticated = true;
       setTimeout(cb, 100); // fake async

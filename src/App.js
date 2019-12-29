@@ -5,6 +5,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import { createBrowserHistory } from "history";
 
 import Auth from './common/authentication/index';
 
@@ -14,6 +15,8 @@ import Footer from './components/footer/index';
 import Main from './components/main1/index';
 import Main2 from './components/main2/index';
 import LoginPage from './components/login/index';
+
+const history = createBrowserHistory();
 
 
 function App({ title, name }) {
@@ -31,7 +34,9 @@ function App({ title, name }) {
         </Router>
         <Footer />
       </div>
-  ): (<LoginPage />);
+  ): (
+      <LoginPage />
+  )
 }
 
 export default App;
