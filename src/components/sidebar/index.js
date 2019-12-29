@@ -6,9 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
   faTimes, 
   faCoffee, 
-  faCheckSquare, 
   faBath,
-  faBell
+  faBell,
+  faHome,
 } from '@fortawesome/free-solid-svg-icons'
 
 function Sidebar(props) {
@@ -19,8 +19,8 @@ function Sidebar(props) {
       </div>
 
       <ul className={ style.sidenav__list }>
-        <SidebarLink icon={ faCoffee } title='Page One' link='/main-1' />
-        <SidebarLink icon={ faCheckSquare } title='Page Two' link='/main-2' />
+        <SidebarLink icon={ faHome } title='Page One' link='/main-1' />
+        <SidebarLink icon={ faCoffee } title='Page Two' link='/main-2' />
         <SidebarLink icon={ faBath } title='Page Three' link='/main-2' />
         <SidebarLink icon={ faBell } title='Page Four' link='/main-2' />
       </ul>   

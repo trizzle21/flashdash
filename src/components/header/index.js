@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Header = (props) => (
   <header className={ style.header }>
-      <div class={ style["menu-icon"] }>
+      <div className={ style["menu-icon"] }>
         <FontAwesomeIcon icon={faBars} />
       </div>
 

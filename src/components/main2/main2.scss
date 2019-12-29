@@ -1,8 +1,8 @@
-@import '../../common/colors';
+@import '../../common/assets/colors';
 
 .main {
   grid-area: main;
-  background-color: $color-dark-primary;
+  background-color: lightgrey;
 }
 
 .main-cards {
