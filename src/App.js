@@ -5,23 +5,16 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { createBrowserHistory } from "history";
-
-import Auth from './common/authentication/index';
 
 import Sidebar from './components/sidebar/index';
 import Header from './components/header/index';
 import Footer from './components/footer/index';
 import Main from './components/main1/index';
 import Main2 from './components/main2/index';
-import LoginPage from './components/login/index';
-
-const history = createBrowserHistory();
 
 
 function App({ title, name }) {
-  console.log(Auth);
-  return Auth.isAuthenticated ? (
+  return (
       <div className={ style['grid-container'] }>
           <Header title={ title } name={ name } />   
           <Router>
@@ -34,8 +27,6 @@ function App({ title, name }) {
         </Router>
         <Footer />
       </div>
-  ): (
-      <LoginPage />
   )
 }
 
