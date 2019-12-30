@@ -2,7 +2,8 @@
 
 .main {
   grid-area: main;
-  background-color: lightgrey;
+  background: #ffffff;
+  opacity:.95;
 }
 
 .main-cards {
@@ -10,7 +11,7 @@
   column-gap: 20px;
   margin: 20px;
 }
-   
+
 @media only screen and (min-width: 65.625em) {
   /* Break out main cards into two columns */
   .main-cards {
@@ -24,8 +25,8 @@
   margin: 20px;
   padding: 20px;
   height:150px;
-  background-color: #e3e4e6;
-  color: slategray;
+  background-color: $color-divider;
+  color: $color-secondary-text;
 }
   
 .main-overview {
