@@ -1,5 +1,6 @@
 import React from "react"
 import style from './header.scss';
+
 import HeaderAvatar from './avatar';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
