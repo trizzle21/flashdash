@@ -1,7 +1,7 @@
 import React from "react"
 import style from './sidebar.scss';
 import SidebarLink from './sidebarlink';
-
+import SidebarProfile from './sidebarprofile';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
   faTimes, 
@@ -12,12 +12,14 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 function Sidebar(props) {
+  const sidenav_class = props.hidden ? style['sidenav'] : style['sidenav active'];
   return (
-    <aside className={ style.sidenav }>
-      <div className={ style["sidenav__close-icon"] }>
+    <aside className={ sidenav_class }>
+      <div className={ style["sidenav__close-icon"] } onClick={ () => props.setHidden(true) }>
         <FontAwesomeIcon icon={faTimes} />
       </div>
 
+      <SidebarProfile name="Test Name" link='/main-1'/>
       <ul className={ style.sidenav__list }>
         <SidebarLink icon={ faHome } title='Page One' link='/main-1' />
         <SidebarLink icon={ faCoffee } title='Page Two' link='/main-2' />

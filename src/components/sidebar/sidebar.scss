@@ -28,18 +28,18 @@
   right: 12px;
   cursor: pointer;
   font-size: 20px;
-  color: #ddd;
+  color: $color-text-icon;
 }
 
 .sidenav__link {
   text-decoration: none;
-  color: #121212;
+  color: $color-primary-text;
 
 }
 
 .sidenav__list {
   padding: 0;
-  margin-top: 85px;
+  margin-top: 20px;
   list-style-type: none;
   color: $color-primary-text;
 }
@@ -70,4 +70,28 @@
   .sidenav__close-icon {
     visibility: hidden;
   }
+}
+
+.sideprofile {
+  background-color: $color-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+.sideprofile__image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.sideprofile__name {
+  color: $color-primary-text;
+  margin-left: 20px;
 }

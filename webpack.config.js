@@ -38,7 +38,13 @@ module.exports = {
                   plugins: ['@babel/plugin-proposal-object-rest-spread']
                 }
             }
-          }
+          },
+          {
+            test: /\.(png|svg|jpg|gif)$/,
+            use: [
+              'file-loader',
+            ],
+          },
       ]
   },
   plugins: [
