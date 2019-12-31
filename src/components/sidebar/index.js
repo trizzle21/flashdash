@@ -12,9 +12,10 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 function Sidebar(props) {
-  const sidenav_class = props.hidden ? style['sidenav'] : style['sidenav active'];
+  const sidenavClass = props.hidden ? style.sidenav : style.sidenav__active;
+  console.log(sidenavClass)
   return (
-    <aside className={ sidenav_class }>
+    <aside className={ sidenavClass }>
       <div className={ style["sidenav__close-icon"] } onClick={ () => props.setHidden(true) }>
         <FontAwesomeIcon icon={faTimes} />
       </div>

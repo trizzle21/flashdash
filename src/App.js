@@ -22,12 +22,12 @@ function App({ title, name }) {
       <div className={ style['grid-container'] }>
           <Router>
             <Header title={ title } name={ name } hidden={ hidden } setHidden={ setHidden }/>   
+            <Sidebar hidden={ hidden } setHidden={ setHidden }/>
             <Switch>
               <Route exact path="/" component={ Main } />
               <Route exact path="/main-1" component={ Main } />
               <Route exact path="/main-2" component={ Main2 } />
             </Switch>
-          <Sidebar hidden={ hidden } setHidden={ setHidden }/>
         </Router>
         <Footer />
       </div>
